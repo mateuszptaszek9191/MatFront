@@ -1,0 +1,431 @@
+@import 'colors';
+@import 'animation';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-padding-top: 81.33px;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-color;
+}
+.prices{
+.price-box{
+	padding: 25px;
+	margin: 20px;
+	background-color: white;
+	box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.2);
+	transition: .3s;
+}
+	h3{
+		color: $main-blue-color;
+		text-transform: uppercase;
+	}
+	span{
+		font-weight: bold;
+	}
+	i{
+		font-size: 20px;
+		margin: 0 5px;
+	}
+	button{
+		padding: 10px 20px;
+		text-transform: uppercase;
+	}
+	.price-tag{
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.price-box:hover{
+		transform: scale(1.05);
+	}
+	.price-info{
+		font-size: 24px;
+
+		a{
+			text-decoration: none;
+		}
+	}
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	margin: 0 auto;
+	margin-bottom: 35px;
+	width: 70px;
+	height: 4px;
+	background-color: $main-blue-color;
+}
+/////////////////// NAV////////////////////////////
+.shadow-bg {
+	background-color: rgb(0, 0, 0, 0.8);
+}
+.navbar {
+	z-index: 1;
+}
+.nav-link {
+	color: white;
+}
+.nav-link:hover {
+	color: $main-blue-color;
+}
+
+.blue-gamers {
+	color: rgb(85, 127, 255);
+}
+
+nav {
+	transition: background-color 0.6s;
+	text-transform: uppercase;
+	a {
+		color: rgb(255, 255, 255);
+	}
+	a:hover {
+		color: rgb(85, 127, 255);
+	}
+	.navbar-brand {
+		font-weight: bold;
+		color: white;
+	}
+	.navbar-brand:hover {
+		color: rgb(85, 127, 255);
+	}
+	.fa-bars {
+		padding: 10px;
+	}
+
+	.active {
+		color: rgb(85, 127, 255);
+	}
+	.fa-bars {
+		color: white;
+		padding: 10px;
+	}
+}
+
+header {
+	color: white;
+
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+
+	h1 {
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 16px;
+	}
+
+	.hero-img {
+		position: relative;
+		background-image: url(../img/small-playstation-g73e19e64a_640.jpg);
+		height: 100vh;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.8);
+		z-index: -10;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		height: 100vh;
+		z-index: 10;
+		text-align: center;
+		padding: 10px;
+	}
+	.fa-chevron-down {
+		color: white;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		font-size: 30px;
+		bottom: 20px;
+	}
+}
+
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 32px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	// .aboutus-hover {
+	// 	// transition: color 0.3s;
+	// }
+	.aboutus-hover:hover {
+		color: $main-blue-color;
+	}
+}
+
+// .................portfolio.......................
+
+
+.aboutus-hero {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../img/small-processor-g8e476d3ff_640.jpg);
+	color: white;
+	z-index: -1;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgb(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+}
+.aboutus-hero-text {
+	margin: 10px 0;
+
+	i {
+		font-size: 36px;
+	}
+	.aboutus-card-title {
+		font-size: 22px;
+	}
+}
+
+.carousel-item {
+	height: 600px;
+}
+.carousel-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 40px 0;
+	background-color: rgb(0, 0, 0, 0.9);
+}
+.carousel-indicators {
+	padding-bottom: 20px;
+}
+
+
+
+// ..........................TEAM..............
+
+.team-img{
+		position: relative;
+		background-image: url(../img/web-gfe631f190_1920.jpg);
+		
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+		h2{
+			color: white;
+		}
+}
+
+.team-img-shadow{
+
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.2);
+		z-index: -5;
+}
+.card{
+	transition: .3s;
+    margin: 25px;
+	img{
+		height: 200px;
+		object-fit: cover;
+	}
+
+	i{
+		padding: 10px;
+	}
+	.card-title{
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+	
+}
+.card:hover{
+	transform: scale(.95);
+}
+
+.card-body{
+	height: 160px;
+}
+
+// ............achievements-box.......
+
+.achievements-box{
+	i{
+		margin-top: 20px;
+		font-size: 45px;
+		color: rgb(255, 255, 255);
+		text-shadow: 0 0 5px rgb(0, 0, 0);
+		
+	}
+	.achievements-title{
+		font-size: 25px;
+		font-weight: 600;
+	}
+}
+
+
+
+
+.contact-item{
+	color: white;
+	
+}
+.contact-box{
+	position: relative;
+		background-image: url(../img/skyline-geda7b562d_640.jpg);
+		
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+		h2{
+			color: white;
+			font-weight: bold;
+		}
+		.underline{
+			background-color: white;
+		}
+}
+
+
+
+.contact-shadow{
+	position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 9, 27, .85);
+		z-index: -5;
+		
+}
+
+.contact-us{
+	
+	align-items: center;
+	color: white;
+	h3{
+		letter-spacing: 2px;
+	text-transform: uppercase;
+	}
+	.media{
+		
+		margin-top:15px;
+		i{
+			color: white;
+			font-size: 25px;
+			margin: 0 15px;
+		}
+		
+	}
+}
+
+.illu img{
+font-size: 80%;
+}
+
+
+@media (min-width: 375px) {
+	header {
+		h1 {
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+}
+@media (min-width: 576px) {
+	html {
+		scroll-padding-top: 81.64px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		scroll-padding-top: 81.64px;
+	}
+	header {
+		h1 {
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 71.98px;
+	}
+
+	.aboutus-hero {
+		background-image: url(../img/big-processor-g7aceb15fe_1920.jpg);
+	}
+}
+@media (min-width: 1024px) {
+	html {
+		scroll-padding-top: 71.98px;
+	}
+}
+@media (min-width: 1024px) {
+	header {
+		h1 {
+			font-size: 40px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+	html {
+		scroll-padding-top: 71.98px;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		.hero-img {
+			background-image: url(../img/big-playstation-gf99f6a6c6_1920.jpg);
+		}
+	}
+}
