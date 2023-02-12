@@ -4,7 +4,7 @@ $('.team-carousel').slick(
     {
         arrows:false,
         autoplay:true,
-        autoplaySpeed:300,
+        autoplaySpeed:400,
     mobileFirst:true,
     slidesToShow: 1,
     slidesToScroll: 1,
