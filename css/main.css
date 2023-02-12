@@ -1,7 +1,6 @@
 .bounce-top {
   display: block;
-  -webkit-animation: bounce-top 2s infinite both;
-          animation: bounce-top 2s infinite both;
+  animation: bounce-top 2s infinite both;
 }
 
 /* ----------------------------------------------
@@ -15,42 +14,9 @@
  * animation bounce-top
  * ----------------------------------------
  */
-@-webkit-keyframes bounce-top {
-  0% {
-    transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  65% {
-    transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  25%, 55%, 75%, 87% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -59,22 +25,18 @@
   }
   40% {
     transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   65% {
     transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   25%, 55%, 75%, 87% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -323,9 +285,14 @@ header .fa-chevron-down {
 .card {
   transition: 0.3s;
   margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card img {
-  height: 200px;
+  height: 150px;
+  max-width: 180px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -335,8 +302,11 @@ header .fa-chevron-down {
 .card .card-title {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-weight: 700;
+}
+.card .card-text {
+  min-height: 150px;
 }
 
 .card:hover {
@@ -344,7 +314,8 @@ header .fa-chevron-down {
 }
 
 .card-body {
-  height: 160px;
+  max-height: 260px;
+  overflow: hidden;
 }
 
 .achievements-box i {
