@@ -291,8 +291,7 @@ header .fa-chevron-down {
   align-items: center;
 }
 .card img {
-  height: 150px;
-  max-width: 180px;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
